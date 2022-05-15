@@ -86,19 +86,19 @@ PODS:
   - CollectionKit (2.4.0):
     - CollectionKit/Core (= 2.4.0)
   - CollectionKit/Core (2.4.0)
-  - ContactBookModule/ContactBook (5.0.0):
+  - ContactBookModule/ContactBook (5.0.1):
     - ContactBookModule/Core
-  - ContactBookModule/Core (5.0.0):
+  - ContactBookModule/Core (5.0.1):
     - ChatSDK
   - CropViewController (2.6.1)
   - DateTools (2.0.0)
   - EFQRCode (5.1.9):
     - EFQRCode/Core (= 5.1.9)
   - EFQRCode/Core (5.1.9)
-  - EncryptionModule/Core (5.0.0):
+  - EncryptionModule/Core (5.0.1):
     - ChatSDK
     - Licensing
-  - EncryptionModule/Encryption (5.0.0):
+  - EncryptionModule/Encryption (5.0.1):
     - EncryptionModule/Core
     - QRCodeReader.swift (~> 10.1.0)
     - SAMKeychain
@@ -152,25 +152,25 @@ PODS:
     - GoogleUtilities/Reachability (~> 7.7)
     - GoogleUtilities/UserDefaults (~> 7.7)
     - nanopb (~> 2.30908.0)
-  - FirebaseModules/Core (5.0.0):
+  - FirebaseModules/Core (5.0.1):
     - ChatSDK
     - Licensing
-  - FirebaseModules/FirebaseBlocking (5.0.0):
+  - FirebaseModules/FirebaseBlocking (5.0.1):
     - ChatSDKFirebase/Adapter
     - FirebaseModules/Core
-  - FirebaseModules/FirebaseLastOnline (5.0.0):
+  - FirebaseModules/FirebaseLastOnline (5.0.1):
     - ChatSDKFirebase/Adapter
     - FirebaseModules/Core
-  - FirebaseModules/FirebaseReadReceipts (5.0.0):
+  - FirebaseModules/FirebaseReadReceipts (5.0.1):
     - ChatSDKFirebase/Adapter
     - FirebaseModules/Core
-  - FirebaseModules/FirebaseTypingIndicator (5.0.0):
+  - FirebaseModules/FirebaseTypingIndicator (5.0.1):
     - ChatSDKFirebase/Adapter
     - FirebaseModules/Core
-  - FirebaseNearbyUsersModule/Core (5.0.0):
+  - FirebaseNearbyUsersModule/Core (5.0.1):
     - ChatSDK
     - Licensing
-  - FirebaseNearbyUsersModule/FirebaseNearbyUsers (5.0.0):
+  - FirebaseNearbyUsersModule/FirebaseNearbyUsers (5.0.1):
     - ChatSDKFirebase/Adapter
     - FirebaseNearbyUsersModule/Core
   - FLAnimatedImage (1.0.16)
@@ -213,26 +213,26 @@ PODS:
   - KissXML/Core (5.3.1)
   - leveldb-library (1.22.1)
   - libidn (1.35)
-  - Licensing (5.0.0):
+  - Licensing (5.0.1):
     - AFNetworking/NSURLSession (~> 3.2.1)
     - ChatSDK
   - MBProgressHUD (1.2.0)
-  - MessageModules/AudioMessage (5.0.0):
+  - MessageModules/AudioMessage (5.0.1):
     - MessageModules/Core
-  - MessageModules/Core (5.0.0):
+  - MessageModules/Core (5.0.1):
     - ChatSDK
     - Licensing
-  - MessageModules/FileMessage (5.0.0):
+  - MessageModules/FileMessage (5.0.1):
     - MessageModules/Core
     - MessageModules/KeyboardOverlayOptions
-  - MessageModules/KeyboardOverlayOptions (5.0.0):
+  - MessageModules/KeyboardOverlayOptions (5.0.1):
     - MessageModules/Core
-  - MessageModules/StickerMessage (5.0.0):
+  - MessageModules/StickerMessage (5.0.1):
     - ChatSDK
     - FLAnimatedImage
     - MessageModules/Core
     - MessageModules/KeyboardOverlayOptions
-  - MessageModules/VideoMessage (5.0.0):
+  - MessageModules/VideoMessage (5.0.1):
     - MessageModules/Core
   - MZDownloadManager (3.6)
   - nanopb (2.30908.0):
@@ -286,7 +286,7 @@ DEPENDENCIES:
   - FirebaseModules/FirebaseReadReceipts (from `../../ChatSDK/ChatSDKModules`)
   - FirebaseModules/FirebaseTypingIndicator (from `../../ChatSDK/ChatSDKModules`)
   - FirebaseNearbyUsersModule/FirebaseNearbyUsers (from `../../ChatSDK/ChatSDKModules`)
-  - Licensing (from `../../ChatSDK/ChatSDKModules`)
+  - Licensing
   - MessageModules/AudioMessage (from `../../ChatSDK/ChatSDKModules`)
   - MessageModules/FileMessage (from `../../ChatSDK/ChatSDKModules`)
   - MessageModules/KeyboardOverlayOptions (from `../../ChatSDK/ChatSDKModules`)
@@ -294,6 +294,8 @@ DEPENDENCIES:
   - MessageModules/VideoMessage (from `../../ChatSDK/ChatSDKModules`)
 
 SPEC REPOS:
+  "git@github.com:chat-sdk/private-pods.git":
+    - Licensing
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - ChatSDKKeepLayout
@@ -361,8 +363,6 @@ EXTERNAL SOURCES:
     :path: "../../ChatSDK/ChatSDKModules"
   FirebaseNearbyUsersModule:
     :path: "../../ChatSDK/ChatSDKModules"
-  Licensing:
-    :path: "../../ChatSDK/ChatSDKModules"
   MessageModules:
     :path: "../../ChatSDK/ChatSDKModules"
 
@@ -377,11 +377,11 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
   CollectionKit: 8f01e7629185bb81072c4aa734d105df5c2d1c8b
-  ContactBookModule: abdbfe4c4bcf1314b6f0a65fd7947b8593de4bf1
+  ContactBookModule: 5debdd4352d6c99733cbcc9f9693648b2be73427
   CropViewController: 58fb440f30dac788b129d2a1f24cffdcb102669c
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   EFQRCode: ac22e003a6aa09ec59ec48776c3560c024c95ba3
-  EncryptionModule: a9ca0e1b9170248c1972fa30ed5be336effc46b9
+  EncryptionModule: 7a2753cb9a6f28f9ef169f49625b41499f061b7d
   Firebase: 580d09e8edafc3073ebf09c03fd42e4d80d35fe9
   FirebaseAuth: 5250d7bdba35e57cc34ec7ddc525f82b2757f2a0
   FirebaseCore: 8138de860a90ca7eec5e324da5788fb0ebf1d93c
@@ -390,8 +390,8 @@ SPEC CHECKSUMS:
   FirebaseFunctions: aead53cdd81ce7371043b79250060546c25f9c7c
   FirebaseInstallations: 40bd9054049b2eae9a2c38ef1c3dd213df3605cd
   FirebaseMessaging: 23db8bf05585e929ada8af0f0968933c25252808
-  FirebaseModules: 264462436072b2dc91e5e2564fe941b16d75bc76
-  FirebaseNearbyUsersModule: 6009d6efb6d3f43059e166eccbcb125efb45ab0a
+  FirebaseModules: 2e730bf8886785dc8c32777648cecbe450381088
+  FirebaseNearbyUsersModule: afc568ea2bd64fa2bee58aa1267ac6750686c6f5
   FLAnimatedImage: 8f3e854ebf9680b71f0b6e700939687fc4d82b4b
   FrameAccessor: 0f7ba6ce37be9a5d0302a27c731dca70af8d438b
   GoogleDataTransport: 5fffe35792f8b96ec8d6775f5eccd83c998d5a3b
@@ -401,9 +401,9 @@ SPEC CHECKSUMS:
   KissXML: 5c8e0f2e8b9f071d3e1ae123dec3eb5da615c10c
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   libidn: e4576a956b797c584c77aaedfc6e3dd639b61bdc
-  Licensing: 6d72cfb69c30f18ec778c5059bfb0b9fe6789ea7
+  Licensing: b967264944bdb7ef2386b7ecb9f7d199230adc65
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MessageModules: abde539ee158bb37f05e81cdc741caf0951f9738
+  MessageModules: c5044e378255430abfbed7c3c08cd6619b41ba04
   MZDownloadManager: 13a3bdf2dbb4866526d30f454e8061b8571bdf7d
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
@@ -425,6 +425,6 @@ SPEC CHECKSUMS:
   VirgilSDK: d45134baee8c1e557ca131b24870bff3f96f7862
   ZLImageEditor: eae3fcfa3050b42111d53bd4c611c26637ef604d
 
-PODFILE CHECKSUM: b3e0a036b1e7313fedb88a778c14c14df85f593f
+PODFILE CHECKSUM: 0da554fbc056e372a68399d2c88d94c797df3939
 
 COCOAPODS: 1.11.3
